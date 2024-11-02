@@ -19,10 +19,7 @@ while line != '':
         for key, value in userLogout.items():
             print(f"{key} ${round(value * 0.01, 2)}")
         
-        print()
-
-        if not stdin.seekable():
-            break
+        #print()
 
     splitLine = line.split(" ")
     if splitLine[0] == "LOGON":
