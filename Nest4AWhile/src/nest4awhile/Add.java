@@ -7,12 +7,9 @@ import java.util.Scanner;
  *
  * @author Haivan Benjamin
  */
-public class Nest4AWhile 
+public class Add 
 {
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) 
+    public Add()
     {
         Scanner scnr = new Scanner(System.in);
         
@@ -20,13 +17,17 @@ public class Nest4AWhile
         
         int n = scnr.nextInt();
         
+        int a;
+        int b;
+        
         for(int i = 1; i <= n; i++)
         {
-            int a = rand.nextInt(0, 1001);
-            int b = rand.nextInt(0, 1001);
+            String[] line = scnr.next().split("\\+");
+            
+            a = Integer.parseInt(line[0]);
+            b = Integer.parseInt(line[1]);
             
             System.out.println(a + b);
         }
     }
-
 }
